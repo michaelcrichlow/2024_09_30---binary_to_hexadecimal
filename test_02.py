@@ -29,20 +29,11 @@ def binary_to_hexadecimal(s: str) -> str:
     # compare it to dictionary to get assocaiated value
     # concatenate those values to get final result
     res = ""
-    # balls = len(s)
     while len(adjusted_string) > 0:
         val = adjusted_string[:4]
         hex_value = local_dict[val]
         res += hex_value
         adjusted_string = adjusted_string[4:]
-
-    # res = 0
-
-    # num = 1
-    # for i in range(len(s) - 1, -1, -1):
-    #     temp_val = num * int(s[i])
-    #     res += temp_val
-    #     num *= 2
 
     return res
 
