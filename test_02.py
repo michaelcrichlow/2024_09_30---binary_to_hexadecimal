@@ -25,9 +25,6 @@ def binary_to_hexadecimal(s: str) -> str:
         "1111": "F",
     }
 
-    # look at slice of four
-    # compare it to dictionary to get assocaiated value
-    # concatenate those values to get final result
     res = ""
     while len(adjusted_string) > 0:
         val = adjusted_string[:4]
@@ -44,5 +41,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
-# binaryToHexadecimal('110010') => '32'
